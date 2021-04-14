@@ -1,0 +1,1 @@
+./streamdm-cpp "EvaluatePrequential -l (LogisticRegression -r 0.1) -r ArffReader -ds covtypeNorm.arff -e (BasicClassificationEvaluator -f 100000)"
