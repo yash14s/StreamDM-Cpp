@@ -1,0 +1,15 @@
+1. git clone https://github.com/huawei-noah/streamDM-Cpp.git
+2. cd streamDM-Cpp
+3. Download latest https://sourceforge.net/projects/log4cpp/  Extract and place log4cpp inside streamDM-Cpp 
+4. cd log4cpp
+5. ./configure
+6. make
+7. log4cpp/test/testDailyRollingAppender.cpp -> remove the if condition block with stime.
+8. sudo make check
+9. sudo make install
+10. cd.. to streamDM-Cpp
+11. make
+12. gedit ~/.bashrc
+13. on the bottom of bash, paste this: export LD_LIBRARY_PATH=/usr/local/lib
+14. wget "http://downloads.sourceforge.net/project/moa-datastream/Datasets/Classification/covtypeNorm.arff.zip"
+15. unzip covtypeNorm.arff.zip
